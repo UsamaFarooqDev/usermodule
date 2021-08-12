@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header{
+    background-color: #082032;
+    height: 10vh;
+    color: white;
+}
+.forms{
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+    margin-top: 3%;
+}
+.forms input{
+    background-color: transparent;
+    color: white;
+}
+.forms a{
+    color: yellow;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.body{
+    background-image: url('../images/back.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+.sidebar{
+background-color: #082032;
+min-height: 90vh;
+color: white;
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+   
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav_links{
+    margin-top: 20vh;
+}
+.nav_links i:hover , a:hover{
+    color: yellow;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    border-radius: 1px;
+    transition: all 0.4s;
+}
+.user_details{
+    background-color: gray;
+    padding: 10px;
+    color: white;
+}
+#hi_field , #u_btn{
+    display: none;
+}
