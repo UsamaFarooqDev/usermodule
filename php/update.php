@@ -12,10 +12,11 @@ if(isset($_POST['user_update'])){
     $check_val = "Select * from user_db where Email = '$oldemail'";
     $result = mysqli_query($con , $check_val);
     $row = mysqli_fetch_array($result);
-
-    if($pass == $row['Pass']){
+    $hashpass = $row['Pass'];
+    $verifypass = password_verify($pass, $hashpass);
+    if($verifypass){
         $update = "Update user_db Set Email = '$email' 
-        where Pass = '$pass'";
+        where Pass = '$hashpass'";
         mysqli_query($con,$update);
         session_start();
         $_SESSION['useremail'] = $email;
@@ -26,4 +27,3 @@ if(isset($_POST['user_update'])){
         header("refresh:0.1 url=../dashboard.php");
     }
 }
-?>
