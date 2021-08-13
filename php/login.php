@@ -20,3 +20,5 @@ if ($email == $row['Email'] && $verifypass) {
     echo "<script type='text/javascript'>alert('Invalid Password');</script>";
         header("refresh:0.1 url=../index.php");
 }
+
+?>

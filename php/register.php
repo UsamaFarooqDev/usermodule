@@ -26,3 +26,5 @@ if (isset($_POST['register_user'])) {
         header("refresh:0.1 url=../index.php");
     }
 }
+
+?>

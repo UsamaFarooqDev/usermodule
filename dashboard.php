@@ -4,8 +4,7 @@
 session_start();
 if (!isset($_SESSION['useremail'])) {
     header("refresh:0.1 url=index.php");
-} 
-elseif (isset($_SESSION['useremail'])) {
+} elseif (isset($_SESSION['useremail'])) {
     $email = $_SESSION['useremail'];
     $sql = "SELECT * FROM user_db where Email = '$email'";
     $result = mysqli_query($con, $sql);
@@ -40,7 +39,6 @@ elseif (isset($_SESSION['useremail'])) {
     </div>
     <div class="container">
         <div class="row text-center">
-
             <div class="col-sm-12">
                 <div class="row user_details">
                     <div class="col-sm-4">
@@ -54,15 +52,11 @@ elseif (isset($_SESSION['useremail'])) {
                     </div>
                 </div>
                 <div class="row">
-                    <!-- Button trigger modal -->
-
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="profileedit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="profileedit" tabindex="-1" aria-labelledby="profileedit" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Update Profile:</h5>
+                                    <h5 class="modal-title" id="profileedit">Update Profile:</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">

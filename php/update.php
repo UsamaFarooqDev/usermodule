@@ -27,3 +27,5 @@ if(isset($_POST['user_update'])){
         header("refresh:0.1 url=../dashboard.php");
     }
 }
+
+?>
